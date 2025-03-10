@@ -42,5 +42,5 @@ void print_path(const vector<int>& v, int total) {
         if (i > 0) cout << " ";
         cout << v[i];
     }
-    cout << "\nTotal cost is " << total << "\n";
+    cout << " \nTotal cost is " << total << "\n";
 }
