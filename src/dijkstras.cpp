@@ -38,12 +38,10 @@ vector<int> extract_shortest_path(const vector<int>& /*distances*/, const vector
 }
 
 void print_path(const vector<int>& v, int total) {
-    if (!v.empty()) {  // Only print if the vector is not empty
-        for (size_t i = 0; i < v.size(); ++i) {
-            if (i > 0) cout << " ";
-            cout << v[i];
-        }
-        cout << "\n";
+    for (size_t i = 0; i < v.size(); ++i) {
+        if (i > 0) cout << " ";
+        cout << v[i];
     }
-    cout << "Total cost is " << total << "\n";
+    cout << " ";
+    cout << "\nTotal cost is " << total << "\n";
 }
